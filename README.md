@@ -54,6 +54,7 @@ This example is invalid: the 8th row contains the number `7` multiple times. Alt
 
 ## Assumptions
 - The grid will always be 9x9 (you don't have to check for invalid number of columns and rows)
+- The grid will always contain numbers (you don't have to check for type)
 
 ## Notes and Hints
 - Remember to check for edge cases. If you're curious, you can check the test cases in `test_cases`
