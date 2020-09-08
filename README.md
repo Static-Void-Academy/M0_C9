@@ -18,16 +18,16 @@ Given a 2D list representing a Sudoku puzzle, write a function that validates it
 
 ## Example 1
 ```
-$ python3 sudoku_validator.py
-Row 1: 5 3 4 6 7 8 9 1 2
-Row 2: 6 7 2 1 9 5 3 4 8
-Row 3: 1 9 8 3 4 2 5 6 7
-Row 4: 8 5 9 7 6 1 4 2 3
-Row 5: 4 2 6 8 5 3 7 9 1
-Row 6: 7 1 3 9 2 4 8 5 6
-Row 7: 9 6 1 5 3 7 2 8 4
-Row 8: 2 8 7 4 1 9 6 3 5
-Row 9: 3 4 5 2 8 6 1 7 9
+$ python3 sudoku_validator.py test_cases/valid1.txt
+5 3 4 6 7 8 9 1 2
+6 7 2 1 9 5 3 4 8
+1 9 8 3 4 2 5 6 7
+8 5 9 7 6 1 4 2 3
+4 2 6 8 5 3 7 9 1
+7 1 3 9 2 4 8 5 6
+9 6 1 5 3 7 2 8 4
+2 8 7 4 1 9 6 3 5
+3 4 5 2 8 6 1 7 9
 
 True
 ```
@@ -37,23 +37,27 @@ The above puzzle is valid, so the output should be `True`.
 ## Example 2
 ```
 $ python3 sudoku_validator.py
-Row 1: 5 3 4 5 7 8 9 1 2
-Row 2: 6 7 2 1 9 5 3 4 8
-Row 3: 1 9 8 3 4 2 5 6 7
-Row 4: 8 5 9 7 6 1 4 2 3
-Row 5: 4 2 6 8 5 3 7 9 1
-Row 6: 7 1 3 9 2 4 8 5 6
-Row 7: 9 6 1 5 3 7 2 8 4
-Row 8: 2 8 7 4 1 9 6 3 5
-Row 9: 3 4 5 2 8 6 1 7 9
+5 3 4 6 7 8 9 1 2
+6 7 2 1 9 5 3 4 8
+1 9 8 3 4 2 5 6 7
+8 5 9 7 6 1 4 2 3
+4 2 6 8 5 3 7 9 1
+7 1 3 9 2 4 8 5 6
+9 6 1 5 3 7 2 8 4
+2 8 7 4 7 9 6 3 5
+3 4 5 2 8 6 1 7 9
 
 False
 ```
 
-This example is invalid: the top row contains the number `5` multiple times. Alternatively, the 4th column also has `5` multiple times as well.
+This example is invalid: the 8th row contains the number `7` multiple times. Alternatively, the 5th column also has `7` multiple times as well.
+
+## Assumptions
+- The grid will always be 9x9 (you don't have to check for invalid number of columns and rows)
 
 ## Notes and Hints
-- Remember to check for edge cases. If you're curious, you can check the test cases...
+- Remember to check for edge cases. If you're curious, you can check the test cases in `test_cases`
+- You can test your own puzzles by specifying a custom path to a file when running your program (e.g., `python3 sudoku_validator.py PATH/TO/TEST/FILE.txt`). See other test files in `test_cases` for the proper format
 
 ## Knowledge Tested
 - Conditionals
@@ -61,7 +65,6 @@ This example is invalid: the top row contains the number `5` multiple times. Alt
 - Sets
 - Lists
 - Nested Data Structures
-- Type Conversion
 
 ## Instructions
 1. Fork this repository to your own account.
