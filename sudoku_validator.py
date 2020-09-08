@@ -4,6 +4,7 @@ import os
 from typing import List
 
 def validate(grid: List[List[int]]) -> bool:
+    """Validates a given 2D list representing a completed Sudoku puzzle"""
     # Write your code here
     pass
 
