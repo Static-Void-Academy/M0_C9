@@ -36,7 +36,7 @@ The above puzzle is valid, so the output should be `True`.
 
 ## Example 2
 ```
-$ python3 sudoku_validator.py
+$ python3 sudoku_validator.py test_cases/invalid_duplicate1.txt
 5 3 4 6 7 8 9 1 2
 6 7 2 1 9 5 3 4 8
 1 9 8 3 4 2 5 6 7
