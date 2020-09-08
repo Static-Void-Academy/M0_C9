@@ -11,9 +11,9 @@ Sudoku is a number puzzle consisting of a 9x9 grid of single-digit numbers 1-9. 
 [Read more about the rules here](https://en.wikipedia.org/wiki/Sudoku).
 
 ### Requirements
-Given a 2D list representing a Sudoku puzzle, write a function that validates it.
+Given a 2D list representing a completed Sudoku puzzle, write a function that validates it.
 
-- The function takes in the 2D list as a parameter.
+- The function takes in a 2D list (list containing lists) as a parameter.
 - It returns `True` if the puzzle is a valid solution, `False` if not.
 
 ## Example 1
