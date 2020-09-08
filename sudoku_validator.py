@@ -5,7 +5,7 @@ from typing import List
 
 def validate(grid: List[List[int]]) -> bool:
     # Write your code here
-    return False
+    pass
 
 ##########################################
 ### DO NOT MODIFY CODE BELOW THIS LINE ###
